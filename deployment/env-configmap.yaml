@@ -3,10 +3,10 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  AWS_BUCKET: mys3-221619254663
+  AWS_BUCKET: mys3-782943564937
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: my-postgres-project3.cixtuor9lolt.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: udagram-db.cm6vb9flhoc9.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100

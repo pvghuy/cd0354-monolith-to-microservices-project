@@ -5,7 +5,7 @@ metadata:
     service: frontend
   name: frontend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       service: frontend
@@ -16,14 +16,14 @@ spec:
         api: external
     spec:
       containers:
-        - image: huypvg/udagram-frontend:v7
+        - image: huypvg/udagram-frontend:v8
           name: frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 80
           resources:
             requests:
-              memory: "64Mi"
+              memory: "250Mi"
               cpu: "250m"
             limits:
               memory: "1024Mi"
